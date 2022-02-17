@@ -7,9 +7,14 @@ class PokemonesService {
     }
 
     async getAll() {
-        const res = await axios('http://localhost:8008/pokemons');
+        const res = await axios('http://localhost:3000/pokemons');
         const data = res.data;
         return data;
+    }
+    async findOne(id){
+        const res = await axios(`http://localhost:3000/pokemons/${id}`);
+        const data = res.data;
+        return data
     }
 
 }
