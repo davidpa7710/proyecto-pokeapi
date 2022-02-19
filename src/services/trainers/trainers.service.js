@@ -52,7 +52,6 @@ class TrainersService {
             setTimeout(() => {
                 this.trainers.push(newTrainer);
                 resolve();
-                console.log('new trainer:', newtrainer);
             })
         }, 1000);
     }
